@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment</title>
+</head>
+<body>
+    <main>
+
+        <form id="form" autocomplete="off">
+            <fieldset>
+                <div class="container">
+                    <label for="user-input">Enter guess here</label>
+                    <input onkeypress="return event.charCode != 32 && event.charCode != 13" maxlength="4" id="user-input" type="text" name="user-input">
+                    <input id="submit" type="button" value="Submit guess">
+                </div>
+            </fieldset>
+        </form>
+      
+        <section class="main">
+            <section id="results">
+                <h1>Guess the random four digit code!</h1>
+                        
+            </section>
+        </section>
+        
+
+    </main>
+    <script src="codebreaker.js"></script>
+</body>
+</html>

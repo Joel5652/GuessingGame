@@ -1,0 +1,152 @@
+body, h1, h2, p, a, a:visited, a:active, a:focus {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(0.8rem, calc(2vw+1rem), 1.4rem);
+  color: #1d1d1d;
+  text-align: start;
+  padding: 10px 0 10px 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main form {
+  width: 40%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 80px;
+  min-width: 320px;
+  min-height: 200px;
+}
+
+main form fieldset {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+main form fieldset .container {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main form label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: clamp(1.2rem, calc(2vw+1rem), 6rem);
+  font-weight: 900;
+  padding: 0 0 30px 0;
+}
+
+main form #user-input {
+  width: calc(100% - 20px);
+  height: calc(12% - 20px);
+  font-size: 1rem;
+  padding: 10px 10px 10px 10px;
+  outline: none;
+  border: none;
+}
+
+main form #user-input:focus {
+  outline: none;
+  border: none;
+  background-color: #f8f9ff;
+}
+
+@media screen and (max-width: 600px) {
+  main form #user-input {
+    height: 2%;
+    font-size: .6rem;
+    padding: 10px 8px 10px 8px;
+  }
+}
+
+main form #submit {
+  width: 50%;
+  height: 40px;
+  font-size: clamp(0.5rem, calc(1vw+.2rem), 1.1rem);
+  margin-top: 30px;
+  padding: 2px 0px 2px 0px;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main form #submit:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transform: translateX(1.05);
+          transform: translateX(1.05);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  main form #submit {
+    height: 24px;
+  }
+}
+
+main .main {
+  width: 40%;
+  height: 30%;
+  background-color: aliceblue;
+  min-width: 320px;
+}
+
+main .main #results {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 200px;
+}
+/*# sourceMappingURL=style.css.map */
